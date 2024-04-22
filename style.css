@@ -1,0 +1,464 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: purple;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px rgb(255, 2, 255);
+}
+
+h2.titulo {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: blueviolet;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 20px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(141, 141, 141);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+
+}
+
+header a:hover {
+    box-shadow: 0px 0px 5px blueviolet;
+    border-radius: 500px;
+    cursor: pointer;
+    transform: scale(1.05);
+    padding: 7px;
+}
+
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px rgb(255, 2, 255);
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 10px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: blueviolet;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+
+/* STYLE ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 70px;
+    justify-content: space-around;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    font-size: 23px;
+    padding: 70px;
+    border-radius: 20px;
+    margin: 60px;
+    margin-top: 35px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 10px blueviolet;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 50px;
+    color: blueviolet;
+}
+
+.especialidades .especialidade-box h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.especialidades .especialidades-box p {
+    font-size: 25px;
+}
+
+/*STYLE SOBRE*/
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: white;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: blueviolet;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 10px 0;
+    text-align: justify;
+
+}
+
+.sobre .btn-social button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: blueviolet;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.sobre .btn-social button:hover {
+    box-shadow: 0px 0px 8px blueviolet;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/*STYLE CERTI-FOTOS*/
+
+
+section.certi-fotos p{
+    color: white;
+    text-align: center;
+    
+
+}
+
+section.certi-fotos {
+    padding: 80px 4%;
+    box-shadow: 0 0 30px 1px rgb(78, 24, 128);
+}
+
+section.certi-fotos .flex {
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.img-certi {
+    width: 360px;
+    height: 460px;
+    background-color: blueviolet;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-certi:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.767);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+/*STYLE TEXT CERTI*/
+.certi-fotos a {
+    color: white;
+}
+
+/* STYLE EXP */
+
+.experiencias{
+    padding: 40px 4%;
+}
+
+.experiencias .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.experiencias .txt-exp{
+    color: white;
+}
+
+.experiencias .txt-exp h2{
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.experiencias .txt-exp span{
+    color: blueviolet;
+}
+
+.experiencias .txt-exp p{
+    margin: 10px 0;
+    text-align: justify;
+}
+
+/*STYLE FOOTER*/
+footer {
+    padding: 40px 4%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 10px 0;
+}
+
+.borda {
+    border-top: 4px solid blueviolet;
+}
+
+footer .line-footer p i {
+    color: blueviolet;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: white;
+}
+
+/* STYLE BUTTONS FOOTER */
+
+footer .line-footer button {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    border: none;
+    background-color: blueviolet;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+footer .line-footer button:hover {
+    box-shadow: 0px 0px 8px blueviolet;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .menu-desk {
+        display: none;
+    }
+
+    .btn-contato {
+        display: flex;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 40px;
+
+    }
+
+    /* STYLE ESPECIALIDADES */
+
+    section.especialidades {
+        padding: 20px 1%;
+    }
+
+    section.especialidades .flex {
+        gap: 30px;
+        justify-content: center;
+    }
+    
+    .especialidades .especialidades-box {
+        color: white;
+        font-size: 23px;
+        padding: 40px;
+        border-radius: 20px;
+        margin: 50px;
+        margin-top: 35px;
+        transition: .2s;
+    }
+    
+    /* STYLE SOBRE*/
+
+    section.sobre {
+        padding: 40px 8%;
+    }
+    
+    .sobre .txt-sobre h2 {
+        font-size: 35px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+    
+    .img-sobre{
+        display: none;
+    }
+
+    /* STYLE CERTI-FOTOS */
+    section.certi-fotos {
+        padding: 80px 8%;
+    }
+
+    .img-certi {
+        width: 100%;
+    }
+    
+    section.certi-fotos .flex {
+        gap: 60px;
+    }
+    
+    /* STYLE FOOTER*/
+    footer .flex {
+        flex-direction: column;
+    }
+    
+    footer .line-footer {
+        text-align: center;
+    }
+
+    /* STYLE EXP */
+
+    .experiencias{
+        padding: 40px 8%;
+    }
+    
+    .img-exp{
+        display: none;
+    }
+
+    .experiencias .txt-exp h2{
+        text-align: center;
+        font-size: 35px;
+        line-height: 39px;
+    }
+}

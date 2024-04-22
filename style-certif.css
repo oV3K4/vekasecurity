@@ -1,0 +1,223 @@
+/* STYLE ALL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.interface{
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: purple;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px rgb(255, 2, 255);
+}
+
+header {
+    padding: 20px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(141, 141, 141);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+
+}
+
+header a:hover {
+    box-shadow: 0px 0px 5px blueviolet;
+    border-radius: 500px;
+    cursor: pointer;
+    transform: scale(1.05);
+    padding: 7px;
+}
+
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px rgb(255, 2, 255);
+}
+
+/* STYLE IMAGES */
+
+.certifi{
+    padding: 20px 4%;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.certifi .img-certi{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    column-count: 2;
+    column-gap: 50px;
+}
+
+/* STYLE TEXT */
+
+.certifi span{
+    color: blueviolet;
+}
+
+.certifi .txt-certi1{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.certifi .txt-certi2{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.certifi .txt-certi3{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.certifi .txt-certi4{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.certifi .txt-certi5{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.certifi .txt-certi6{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.certifi .txt-certi7{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        line-height: 50px;
+    
+}
+
+.certifi .txt-certi8{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/*STYLE FOOTER*/
+footer {
+    padding: 40px 4%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 10px 0;
+}
+
+.borda {
+    border-top: 4px solid blueviolet;
+}
+
+footer .line-footer p i {
+    color: blueviolet;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: white;
+}
+
+/* STYLE BUTTONS FOOTER */
+
+footer .line-footer button {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    border: none;
+    background-color: blueviolet;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+footer .line-footer button:hover {
+    box-shadow: 0px 0px 8px blueviolet;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+@media (max-width: 1000px) {
+    img {
+        width: 90%;
+        height: auto;
+    
+    }
+
+    .certifi .img-certi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
